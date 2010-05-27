@@ -1,0 +1,37 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title><% title %></title>
+<link rel="Shortcut Icon" href="<% href /static/favicon.ico %>" />
+<link rel="stylesheet" href="<% href /static/style.css %>" />
+<% render 'head' %>
+</head>
+<body>
+<div id="wrap">
+    <div id="header">
+		<pre id="logo">
+(_______|_)   | (_______)  | (_)  _                (_)           | |
+_       _____| |_____   __| |_ _| |_ ___   ____    _       _____| |__
+| |     |  _   _)  ___) / _  | (_   _) _ \ / ___)  | |     (____ |  _ \
+| |_____| |  \ \| |____( (_| | | | || |_| | |      | |_____/ ___ | |_) )
+\______)_|   \_)_______)____|_|  \__)___/|_|      |_______)_____|____/
+		</pre>
+    <h1><% title %></h1>
+	</div>
+    <div id="main">
+        <% render 'content' %>
+    </div>
+    <div id="menu">
+        <% render 'menu' %>
+    </div>
+    <div id="footer"><% footer %></div>
+</div>
+</body>
+</html>
+
+<% subskin 'content' %>
+Overwrite this subskin to add content.
+
+<% subskin 'menu' %>
+<% navigation %>

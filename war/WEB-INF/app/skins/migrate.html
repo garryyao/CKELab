@@ -1,0 +1,16 @@
+<% extends 'skins/base.html' %>
+
+<% subskin 'content' | markdown %>
+
+### You can upload v2 definition files (XML) here then receive them as v3 format (JSON)
+
+<form method="post" enctype="multipart/form-data">
+		<label for="type">Which file type?</label>
+		<select name="type">
+			<option value="styles">FCKStyles</option>
+			<option value="templates">FCKTemplates</option>
+		</select>
+		<input type="file" name="file" size="28"/>
+		<br />
+		<input type="submit" value='Convert' />
+</form>
